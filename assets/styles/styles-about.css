@@ -1,0 +1,39 @@
+@import url(var.css);
+
+/* LANG */
+.lang-item-1 {
+    left: 10vw;
+}
+
+.lang-item-2 {
+    right: 10vw;
+}
+
+/* ABOUT */
+.about-grid-1 {
+    background-color: var(--bg-c-1);
+
+    & h1,h2,h3,b1,b2,b3 {
+        background-color: transparent;
+    }
+}
+
+.about-title {
+    padding-bottom: var(--pad);
+}
+
+/* -- */
+
+.about-item-1_1 {
+    width: clamp(150px, 50vw, 750px);
+    left: -10vw;
+}
+
+.about-item-2_1 {
+    width: clamp(150px, 60vw, 600px);
+    left: 15vw;
+}
+
+.about-item-2_2 {
+    left: -10vw;
+}

@@ -1,0 +1,31 @@
+@import url(var.css);
+
+
+/* LANG */
+.lang-item-1 {
+    left: 0vw;
+}
+
+.lang-item-2 {
+    right: -20vw;
+}
+
+/* CV */
+
+.cv-title {
+    padding-bottom: calc(var(--pad)*2);
+}
+
+.cv-info li {
+    padding-bottom: calc(var(--pad)*2);
+}
+
+.cv-item-1_1 {
+    width: clamp(200px, 50vw, 750px);
+    left: -10vw;
+}
+
+.cv-item-2_1 {
+    width: clamp(175px, 30vw, 300px);
+    left: 10vw;
+}

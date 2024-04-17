@@ -1,0 +1,33 @@
+:root {
+
+    /* animations */
+    --def-duration: 0.25s;
+    --move: 6px;
+    --move-bs: calc(var(--move) + var(--container-bs-size));
+
+    /* bg */
+    --bg-c-1: white;
+    --bg-c-2: rgb(36, 36, 36);
+
+    /* dots */
+    --dot-c-1: rgb(0, 98, 0);
+    --dot-c-2: white;
+    --dot-size: clamp(0.45px, 0.15vw, 1.2px);
+    --dot-space: clamp(4.5px, 1.5vw, 15px);
+    
+    /* text */
+    --txt-c-1: black;
+    --txt-c-2: green;
+
+    /* paddings */
+    --pad: 10px;
+    --pad-body: clamp(16px, 5vw, 50px);
+    --marg: 60px;
+
+    /* container */
+    --container-bs-c: rgb(0, 0, 0);
+    --container-bs-size: 3px;
+    --container-border-c: black;
+    --container-border-size: 1px;
+    --container-bg: white;
+}
