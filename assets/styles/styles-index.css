@@ -26,7 +26,10 @@
 }
 
 /* -- */
-
+.index-item-CEL {
+    left: -10vw;
+    width: clamp(250px, 70vw, 650px);
+}
 .index-item-RES {
     left: -15vw;
     width: clamp(70px, 40vw, 300px);
@@ -64,6 +67,6 @@
     width: clamp(100px, 50vw, 200px);
 }
 .index-item-GAL {
-    left: -10vw;
+    left: 10vw;
     width: clamp(200px, 50vw, 500px);
 }
