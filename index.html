@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Works - Antonio Carmagnani</title>
+    <title>Antonio Carmagnani</title>
 
     <!-- styles -->
     <link rel="stylesheet" href="assets/styles/styles.css">
@@ -16,12 +16,60 @@
 <body>
 
     <div id="Body">
-        <div id="Header"></div>
-        <div id="Lang"></div>
+        
+        <div id="Noise_bg-1"></div>
     
-        <div id="Index"></div>    
-    
-        <footer id="Footer"></footer>
+        <div id="Index">
+
+            <div class="grid index-grid-1 _fadein _delay-1">
+
+                <div class="grid-item index-item index-item-1_1">
+                    <div class="header-title">
+                        <h1>Antonio Carmagnani</h1>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid index-grid-2 _fadein _delay-2">
+
+                <a href="works.html" class="grid-item index-item index-item-2_1 container-1_2 _move">
+                    <b1>Click to explore <span class="top-right-arrow"></span></b1>
+                </a>
+
+            </div>
+
+            <div class="grid index-grid-3">
+
+                <div class="grid-item index-item index-item-3_1"> 
+                    <h2 id="Countdown"></h2>
+                </div>
+            </div>
+
+            <script>
+                // Your JavaScript code here
+                let startCount = 0;
+        
+                const stopCount = 100,
+                    duration = 5000, // milliseconds
+                    countDownElement = document.getElementById('Countdown'),
+                    intervalTime = duration / Math.abs(startCount - stopCount);
+        
+                let countDown = setInterval(function () {
+                    if (startCount === stopCount) {
+                        clearInterval(countDown);
+                        countDownElement.classList.add('_fadeout'); // Add fade class when countdown reaches 100%
+                    }
+                    countDownElement.innerHTML = startCount + "%";
+                    if (startCount > stopCount) {
+                        startCount--;
+                    } else {
+                        startCount++;
+                    }
+                }, intervalTime);
+            </script>
+
+        </div>    
     </div>
     
 </body>

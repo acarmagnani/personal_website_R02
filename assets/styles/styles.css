@@ -5,6 +5,9 @@
 .top-right-arrow::after {
     content: "\2197 \FE0E";
 }
+.top-arrow::after {
+    content: "\2191 \FE0E";
+}
 
 /* ANIMATIONS */
 
@@ -49,6 +52,45 @@
     50% { transform:translate(0%, 0%) }
     75% { transform:translate(-20%, 0%) }
     100% { transform:translate(-10%, 0%) }
+}
+
+/* fade */
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+._fadein {
+    animation-name: fadein;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+._fadeout {
+    animation-name: fadeout;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+/* DELAY */
+._delay-1 {
+    animation-delay: 7.5s;
+}
+
+._delay-2 {
+    animation-delay: 8s;
 }
 
 /* FONTS */
@@ -136,16 +178,23 @@ body {
 }
 
 .container-1 {
-    background-color: var(--container-bg);
+    background-color: var(--container-bg-c-1);
     padding: var(--pad);
-    border: var(--container-border-size) solid var(--container-border-c);
-    box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c);
+    border: var(--container-border-size) solid var(--container-border-c-1);
+    box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c-1);
+}
+
+.container-1_2 {
+    background-color: var(--container-bg-c-2);
+    padding: var(--pad);
+    border: var(--container-border-size) solid var(--container-border-c-2);
+    box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c-2);
 }
 
 .container-2 {
-    background-color: var(--container-bg);
+    background-color: var(--container-bg-c-1);
     padding: var(--pad);
-    border: var(--container-border-size) dashed var(--container-border-c);
+    border: var(--container-border-size) dashed var(--container-border-c-1);
 }
 
 
@@ -188,7 +237,7 @@ body {
 /* FOOTER */
 
 footer {
-    color: white;
+    color: var(--txt-c-3);
     
     margin: 0;
 
@@ -203,7 +252,7 @@ footer {
 
     & h1,h2,h3,b1 {
         background-color: transparent;
-        color: white;
+        color: var(--txt-c-3);
     }
 }
 

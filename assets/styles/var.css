@@ -18,6 +18,7 @@
     /* text */
     --txt-c-1: black;
     --txt-c-2: green;
+    --txt-c-3: white;
 
     /* paddings */
     --pad: 10px;
@@ -25,9 +26,12 @@
     --marg: 60px;
 
     /* container */
-    --container-bs-c: rgb(0, 0, 0);
+    --container-bs-c-1: rgb(0, 0, 0);
+    --container-bs-c-2: white;
     --container-bs-size: 3px;
-    --container-border-c: black;
+    --container-border-c-1: black;
+    --container-border-c-2: white;
     --container-border-size: 1px;
-    --container-bg: white;
+    --container-bg-c-1: white;
+    --container-bg-c-2: rgb(36, 36, 36);
 }

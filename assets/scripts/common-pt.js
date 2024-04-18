@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // PAGES
     fetchAndInsert('../html/pages/index.html', 'Index', removeLangEN);
+    fetchAndInsert('../html/pages/works.html', 'Works', removeLangEN);
     fetchAndInsert('../html/pages/about.html', 'About', removeLangEN);
     fetchAndInsert('../html/pages/contact.html', 'Contact', removeLangEN);
     fetchAndInsert('../html/pages/cv.html', 'Cv', removeLangEN);

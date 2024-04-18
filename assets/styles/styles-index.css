@@ -1,72 +1,46 @@
 @import url(var.css);
 
-/* LANG */
-.lang-item-1 {
-    right: 10vw;
+#Noise_bg-1:after {
+    animation: grain 10s steps(10) infinite;
+    background-image: url(../images/bg/bg_noise.png);
+    content: "";
+    height: 300%;   
+    left: -50%;
+    opacity: .65;
+    position: fixed;
+    top: -110%;
+    width: 300%;
 }
 
-.lang-item-2 {
-    right: 5vw;
+@keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
 }
 
-/* INDEX */
-.index-item img {
-    width: 100%;
+body {
+    color: var(--txt-c-3);
+    
+    margin: 0;
+
+    background:
+    linear-gradient(90deg, var(--bg-c-2) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--bg-c-2) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-c-2);
 }
 
-.index-info {
-    color: var(--txt-c-2);
-    margin-bottom: var(--pad);
-    white-space: nowrap;
+h1,h2,h3,b1,b2,b3 {
+    background-color: transparent;
+    color: var(--txt-c-3);
 }
 
-.index-img img {
-    line-height: 0;
-    box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c);
-}
-
-/* -- */
-.index-item-CEL {
-    left: -10vw;
-    width: clamp(250px, 70vw, 650px);
-}
-.index-item-RES {
+.index-item-2_1 {
     left: -15vw;
-    width: clamp(70px, 40vw, 300px);
-}
-.index-item-WVD {
-    left: 0;
-    width: clamp(150px, 60vw, 550px);
-}
-.index-item-EVR {
-    left: 18vw;
-    width: clamp(120px, 40vw, 300px);
-}
-.index-item-LAS {
-    left: -15vw;
-    width: clamp(200px, 50vw, 500px);
-}
-.index-item-LIB {
-    left: 5vw;
-    width: clamp(250px, 70vw, 650px);
-}
-.index-item-GAR {
-    left:20vw;
-    width: clamp(100px, 50vw, 400px);
-}
-.index-item-WOM {
-    left: -10vw;
-    width: clamp(150px, 60vw, 550px);
-}
-.index-item-PIR {
-    left: 20vw;
-    width: clamp(75px, 50vw, 250px);
-}
-.index-item-PRC {
-    left: -10vw;
-    width: clamp(100px, 50vw, 200px);
-}
-.index-item-GAL {
-    left: 10vw;
-    width: clamp(200px, 50vw, 500px);
 }
