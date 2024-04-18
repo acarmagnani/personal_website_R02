@@ -22,7 +22,7 @@
 
 .works-img img {
     line-height: 0;
-    box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c);
+    box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c-1);
 }
 
 /* -- */
