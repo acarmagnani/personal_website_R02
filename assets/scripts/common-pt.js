@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Call the function to modify the links
         modifyLangLinks();
     });
+    fetchAndInsert('../html/common/backtotop.html', 'BackToTop', removeLangEN);
 
     // PAGES
     fetchAndInsert('../html/pages/works.html', 'Works', removeLangEN);

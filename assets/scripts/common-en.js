@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Call the function to modify the links
         modifyLangLinks();
     });
+    fetchAndInsert('../html/common/backtotop.html', 'BackToTop', removeLangPT);
 
     // PAGES
     fetchAndInsert('../html/pages/works.html', 'Works', removeLangPT);
@@ -70,4 +71,12 @@ function modifyLangLinks() {
     // Set the href attributes dynamically
     linkPt.href = "pt/" + fileName;
     linkEn.href = fileName;
+}
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
