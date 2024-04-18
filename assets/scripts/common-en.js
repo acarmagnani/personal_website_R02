@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // PAGES
-    fetchAndInsert('../html/pages/index.html', 'Index', removeLangPT);
     fetchAndInsert('../html/pages/works.html', 'Works', removeLangPT);
     fetchAndInsert('../html/pages/about.html', 'About', removeLangPT);
     fetchAndInsert('../html/pages/contact.html', 'Contact', removeLangPT);
