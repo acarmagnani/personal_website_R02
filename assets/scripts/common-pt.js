@@ -71,3 +71,24 @@ function modifyLangLinks() {
     linkPt.href = fileName;
     linkEn.href = "../" + fileName;
 }
+
+function modifyLangLinks() {
+    // Get the file name from the current URL
+    var fileName = window.location.pathname.split("/").pop();
+    
+    // Get the anchor elements
+    var linkPt = document.getElementById("Lang-pt");
+    var linkEn = document.getElementById("Lang-en");
+    
+    // Set the href attributes dynamically
+    linkPt.href = "pt/" + fileName;
+    linkEn.href = fileName;
+}
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

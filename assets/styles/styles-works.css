@@ -27,7 +27,7 @@
 
 /* -- */
 .works-item-CEL {
-    left: -10vw;
+    left: -5vw;
     width: clamp(250px, 70vw, 650px);
 }
 .works-item-RES {
