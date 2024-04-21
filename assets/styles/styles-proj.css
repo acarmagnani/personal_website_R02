@@ -431,7 +431,7 @@
 }
 .RES-item-1_4 {
     left: 5vw;
-    width: clamp(200px, 50vw, 750px);
+    width: clamp(250px, 50vw, 750px);
 }
 .RES-item-1_5 {
     left: -10vw;

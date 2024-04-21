@@ -10,14 +10,14 @@
     --bg-c-2: rgb(36, 36, 36);
 
     /* dots */
-    --dot-c-1: rgb(0, 98, 0);
+    --dot-c-1: rgb(0, 105, 0);
     --dot-c-2: white;
     --dot-size: clamp(0.45px, 0.15vw, 1.2px);
     --dot-space: clamp(4.5px, 1.5vw, 15px);
     
     /* text */
     --txt-c-1: black;
-    --txt-c-2: green;
+    --txt-c-2:  rgb(0, 105, 0);
     --txt-c-3: white;
 
     /* paddings */
