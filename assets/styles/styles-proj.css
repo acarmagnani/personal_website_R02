@@ -19,6 +19,112 @@
 }
 
 
+/* STR */
+.STR-grid-1 {
+    background-color: var(--bg-c-1);
+}
+.STR-grid-3 {
+    background-color: var(--bg-c-2);
+
+    & b1 {
+        color: var(--txt-c-3);
+        background-color: transparent;
+    }
+}
+
+.STR-item-1_1 {
+    left: 5vw;
+    width: clamp(100px, 50vw, 400px);
+}
+.STR-item-2_1 {
+    left: -5vw;
+    width: clamp(100px, 50vw, 400px);
+}
+.STR-item-2_2 {
+    left: 0vw;
+    width: clamp(300px, 60vw, 1200px);
+}
+.STR-item-2_3 {
+    left: 10vw;
+    width: clamp(200px, 50vw, 500px);
+}
+.STR-item-2_4 {
+    left: 0vw;
+    width: clamp(300px, 60vw, 1200px);
+}
+.STR-item-2_5 {
+    left: -5vw;
+    width: clamp(250px, 50vw, 750px);
+}
+.STR-item-2_6 {
+    left: 0vw;
+    width: clamp(300px, 60vw, 1200px);
+}
+.STR-item-2_7 {
+    left: 5vw;
+    width: clamp(200px, 50vw, 500px);
+}
+.STR-item-2_8 {
+    left: 0vw;
+    width: clamp(300px, 60vw, 1200px);
+}
+.STR-item-2_9 {
+    left: 0vw;
+    width: clamp(100px, 50vw, 300px);
+}
+.STR-item-2_10 {
+    left: 0vw;
+    width: clamp(300px, 60vw, 1200px);
+}
+.STR-item-2_11 {
+    left: 0vw;
+    width: clamp(300px, 60vw, 1200px);
+}
+.STR-item-2_12 {
+    left: -15vw;
+    width: clamp(100px, 50vw, 300px);
+}
+.STR-item-2_13 {
+    left: -15vw;
+    width: clamp(100px, 50vw, 400px);
+}
+.STR-item-2_14 {
+    left: 0vw;
+    width: clamp(100px, 50vw, 400px);
+}
+.STR-item-2_15 {
+    left: 15vw;
+    width: clamp(100px, 50vw, 400px);
+}
+.STR-item-3_1 {
+    left: -5vw;
+    width: clamp(100px, 50vw, 400px);
+}
+.STR-item-4_1 {
+    left: -5vw;
+    width: clamp(250px, 50vw, 750px);
+}
+.STR-item-4_2 {
+    left: 5vw;
+    width: clamp(200px, 60vw, 850px);
+}
+.STR-item-4_3 {
+    left: -10vw;
+    width: clamp(175px, 50vw, 650px);
+}
+.STR-item-4_4 {
+    left: 0vw;
+    width: clamp(200px, 50vw, 500px);
+}
+.STR-item-4_5 {
+    left: -5vw;
+    width: clamp(250px, 50vw, 750px);
+}
+.STR-item-4_6 {
+    left: 10vw;
+    width: clamp(175px, 50vw, 650px);
+}
+
 /* CEL */
 .CEL-grid-2 {
     background-color: var(--bg-c-1);

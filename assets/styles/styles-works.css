@@ -26,6 +26,10 @@
 }
 
 /* -- */
+.works-item-STR {
+    left: 15vw;
+    width: clamp(200px, 50vw, 500px);
+}
 .works-item-CEL {
     left: -5vw;
     width: clamp(250px, 70vw, 650px);

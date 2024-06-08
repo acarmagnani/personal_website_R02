@@ -3,10 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // COMMON
     fetchAndInsert('../html/common/header.html', 'Header', removeLangPT);
     fetchAndInsert('../html/common/footer.html', 'Footer', removeLangPT);
-    fetchAndInsert('../html/common/lang-en.html', 'Lang', function() {
-        // Call the function to modify the links
-        modifyLangLinks();
-    });
     fetchAndInsert('../html/common/backtotop.html', 'BackToTop', removeLangPT);
 
     // PAGES
@@ -60,18 +56,6 @@ function removeLangPT() {
     });
 }
 
-function modifyLangLinks() {
-    // Get the file name from the current URL
-    var fileName = window.location.pathname.split("/").pop();
-    
-    // Get the anchor elements
-    var linkPt = document.getElementById("Lang-pt");
-    var linkEn = document.getElementById("Lang-en");
-    
-    // Set the href attributes dynamically
-    linkPt.href = "pt/" + fileName;
-    linkEn.href = fileName;
-}
 
 // Function to scroll to the top of the page
 function scrollToTop() {
